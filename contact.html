@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Student Inquiry</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About & Schedule</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <h2>Student Inquiry Form</h2>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Student Profile</legend>
+            
+                <label for="fname">Full Name:</label>
+                <input type="text" id="fname" name="fname" required placeholder="Enter full name">
+            
+            <p>
+                <label for="uemail">Email Address:</label>
+                <input type="email" id="uemail" name="uemail" required placeholder="name@example.com">
+            </p>
+            <p>
+                <label for="umobile">Mobile Number:</label>
+                <input type="tel" id="umobile" name="umobile" required 
+                       pattern="[0-9]{10}" placeholder="10-digit number">
+            </p>
+            <p>
+                <label for="udob">Date of Birth:</label>
+                <input type="date" id="udob" name="udob">
+            </p>
+            <p>
+                Gender:
+                <input type="radio" id="m" name="gen" value="m"> <label for="m">Male</label>
+                <input type="radio" id="f" name="gen" value="f"> <label for="f">Female</label>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Preferences</legend>
+            <p>
+                Current Skills:
+                <input type="checkbox" id="h" name="s" value="html"> <label for="h">HTML</label>
+                <input type="checkbox" id="c" name="s" value="css"> <label for="c">CSS</label>
+                <input type="checkbox" id="j" name="s" value="js"> <label for="j">JS</label>
+                <input type="checkbox" id="g" name="s" value="git"> <label for="g">Git</label>
+            </p>
+            <p>
+                <label for="sem">Target Semester:</label>
+                <select id="sem" name="sem">
+                    <option value="I">Semester I</option>
+                    <option value="II">Semester II</option>
+                    <option value="III">Semester III</option>
+                    <option value="IV">Semester IV</option>
+                </select>
+            </p>
+            <p>
+                <label for="uphoto">Upload Photo:</label>
+                <input type="file" id="uphoto" name="uphoto">
+            </p>
+            <p>
+                <label for="amsg">Address / Message:</label><br>
+                <textarea id="amsg" name="amsg" rows="4" cols="40" placeholder="Type your details here..."></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <button type="submit">Submit Inquiry</button>
+            <button type="reset">Clear Form</button>
+        </p>
+    </form>
+</body>
+</html>
